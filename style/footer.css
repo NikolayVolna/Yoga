@@ -1,0 +1,131 @@
+.footer {
+    background-color: #112734;
+    padding: 37px 0px 59px 0px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 0px 30px 0px;
+    }
+}
+
+.footer__main {
+    position: relative;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.footer__column {
+    padding: 15px 15px;
+    flex: 0 1 16.6667%;
+}
+
+@media (max-width: 1024px) {
+    .footer__column {
+        flex: 0 1 20%;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer__column {
+        flex: 0 1 33.333%;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer__column {
+        flex: 0 1 50%;
+    }
+}
+
+.footer__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #f1d44b;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .footer__label {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer__label {
+        margin-bottom: 10px;
+    }
+}
+
+.menu-footer__item:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+}
+
+@media (max-width: 768px) {
+    .menu-footer__item:not(:last-child) {
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu-footer__item:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+.menu-footer__link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.social__item:not(:first-child) {
+    padding-left: 44px;
+}
+
+@media (max-width: 768px) {
+    .social__item:not(:first-child) {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .social__item:not(:first-child) {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .social__item:last-child {
+        padding-right: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social__item:last-child {
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social__item img {
+        width: 25px;
+    }
+}
