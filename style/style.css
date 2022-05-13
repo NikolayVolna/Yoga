@@ -609,7 +609,7 @@ body._lock {
     position: relative;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1024px) {
     .hatha-yoga__images {
         display: flex;
         justify-content: center;
@@ -617,16 +617,21 @@ body._lock {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1015px) {
     .hatha-yoga__images {
         margin: 0px;
+    }
+}
+
+@media (max-width: 1015px) {
+    .hatha-yoga__images img {
+        flex: 0 0 100%;
     }
 }
 
 @media (max-width: 768px) {
     .hatha-yoga__images img {
         margin-bottom: 46px;
-        flex: 0 0 100%;
     }
 }
 
@@ -675,7 +680,7 @@ body._lock {
     max-width: 560px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1015px) {
     .hatha-yoga__content {
         max-width: 100%;
         flex: 0 0 100%;
@@ -694,39 +699,31 @@ body._lock {
 
 iframe {
     border-radius: 15px 15px 0px 0px;
+    width: 100%;
 }
 
 @media (max-width: 1086px) {
     iframe {
-        width: 492px;
-        height: 319px;
-    }
-}
-
-@media (max-width: 768px) {
-    .content__video iframe {
-        width: 737px;
-        height: 450px;
+        width: 100%;
+        height: 318px;
+        margin: auto;
     }
 }
 
 @media (max-width: 425px) {
     .content__video iframe {
-        width: 405px;
-        height: 230px;
+        height: 225px;
     }
 }
 
 @media (max-width: 375px) {
     .content__video iframe {
-        width: 355px;
         height: 200px;
     }
 }
 
 @media (max-width: 320px) {
     .content__video iframe {
-        width: 300px;
         height: 190px;
     }
 }
