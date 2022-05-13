@@ -1130,17 +1130,17 @@ iframe {
 }
 
 .courses__item-left {
-    background: url(/image/courses/img_left.png) no-repeat;
+    background: url('./image/courses/img_left.png') no-repeat;
     background-size: cover;
 }
 
 .courses__item-center {
-    background: url(/image/courses/img_center.png) no-repeat;
+    background: url('./image/courses/img_center.png') no-repeat;
     background-size: cover;
 }
 
 .courses__item-right {
-    background: url(/image/courses/img_right.png) no-repeat;
+    background: url('./image/courses/img_right.png') no-repeat;
     background-size: cover;
 }
 
