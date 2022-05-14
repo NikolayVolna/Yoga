@@ -1285,19 +1285,6 @@ iframe {
     padding-bottom: 60px;
 }
 
-
-/* @media (max-width: 320px) {
-    .practice__content__arrow-left img {
-        width: 35px;
-    }
-}
-
-@media (max-width: 320px) {
-    .practice__content__arrow-right img {
-        width: 35px;
-    }
-} */
-
 .practice__content {
     display: flex;
     align-items: center;
@@ -1315,27 +1302,6 @@ iframe {
         width: 153px;
     }
 }
-
-
-/* @media (max-width: 425px) {
-    .practice__content__foto img {
-        width: 175px;
-        margin: 0px;
-    }
-}
-
-@media (max-width: 375px) {
-    .practice__content__foto img {
-        width: 150px;
-    }
-}
-
-@media (max-width: 320px) {
-    .practice__content__foto img {
-        width: 120px;
-        margin-bottom: 10px;
-    }
-} */
 
 .practice__content__foto {
     display: flex;
