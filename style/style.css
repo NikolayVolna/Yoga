@@ -164,7 +164,7 @@ body._lock {
 
 @media (max-width: 650px) {
     .main-block__image {
-        opacity: 0.3;
+        opacity: 0.5;
     }
 }
 
@@ -214,7 +214,7 @@ body._lock {
     color: rgba(17, 39, 52, 0.7);
 }
 
-@media (max-width: 769px) {
+@media (max-width: 870px) {
     .main-block__subtitle {
         font-size: 26px;
     }
@@ -310,7 +310,7 @@ body._lock {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 870px) {
     .content-left__title {
         font-size: 32px;
     }
@@ -333,7 +333,7 @@ body._lock {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 870px) {
     .circle {
         width: 100px;
         height: 100px;
@@ -369,7 +369,7 @@ body._lock {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 870px) {
     .content-right__top {
         font-size: 42px;
     }
@@ -626,11 +626,6 @@ body._lock {
 @media (max-width: 1015px) {
     .hatha-yoga__images img {
         flex: 0 0 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .hatha-yoga__images img {
         margin-bottom: 46px;
     }
 }
@@ -939,7 +934,7 @@ iframe {
     color: rgba(17, 39, 52, 0.7);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1015px) {
     .challebge__subtitle {
         padding-bottom: 33px;
     }
@@ -1097,30 +1092,37 @@ iframe {
     margin: 0 -15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 784px) {
     .courses__body {
         justify-content: center;
     }
 }
 
 .courses__column {
-    flex: 0 0 33.333%;
+    flex: 0 1 33.333%;
     padding: 0 15px;
     margin-bottom: 78px;
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 784px) {
     .courses__column {
-        flex: 0 0 50%;
+        flex: 0 1 50%;
         margin-bottom: 20px;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 475px) {
     .courses__column {
         flex: 0 0 100%;
     }
+}
+
+.courses__item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
 }
 
 .column__container {
@@ -1129,19 +1131,32 @@ iframe {
     margin: 0 auto;
 }
 
+@media (max-width: 475px) {
+    .column__container {
+        padding: 0 2px;
+    }
+}
+
+.column__content {
+    flex: 1 1 auto;
+}
+
 .courses__item-left {
-    background: url(/image/courses/img_left.png) no-repeat;
+    background: url("../image/courses/img_left.png") no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 .courses__item-center {
-    background: url(/image/courses/img_center.png) no-repeat;
+    background: url("../image/courses/img_center.png") no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 .courses__item-right {
-    background: url(/image/courses/img_right.png) no-repeat;
+    background: url("../image/courses/img_right.png") no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 .arrow-left img {
@@ -1270,7 +1285,8 @@ iframe {
     padding-bottom: 60px;
 }
 
-@media (max-width: 320px) {
+
+/* @media (max-width: 320px) {
     .practice__content__arrow-left img {
         width: 35px;
     }
@@ -1280,7 +1296,7 @@ iframe {
     .practice__content__arrow-right img {
         width: 35px;
     }
-}
+} */
 
 .practice__content {
     display: flex;
@@ -1288,25 +1304,20 @@ iframe {
     justify-content: space-between;
 }
 
-@media (max-width: 425px) {
-    .practice__content {
-        flex-wrap: wrap;
-    }
-}
-
 @media (max-width: 1124px) {
-    .practice__content__foto img {
+    .content__foto img {
         width: 213px;
     }
 }
 
 @media (max-width: 1000px) {
-    .practice__content__foto img {
+    .content__foto img {
         width: 153px;
     }
 }
 
-@media (max-width: 425px) {
+
+/* @media (max-width: 425px) {
     .practice__content__foto img {
         width: 175px;
         margin: 0px;
@@ -1324,6 +1335,16 @@ iframe {
         width: 120px;
         margin-bottom: 10px;
     }
+} */
+
+.practice__content__foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.practice__content__foto:not(:first-child) img {
+    padding: 0px 5px 5px 0px;
 }
 
 
@@ -1411,21 +1432,12 @@ iframe {
 
 .block-left__text {
     position: relative;
+    display: inline-block;
     padding: 32px 0px 48px 36px;
     font-weight: 400;
     font-size: 18px;
     line-height: 138.8%;
     color: rgba(17, 39, 52, 0.7);
-}
-
-.block-left__text::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 27px;
-    width: 3px;
-    height: 60px;
-    background: #f1d44b;
 }
 
 @media (max-width: 1024px) {
@@ -1446,18 +1458,21 @@ iframe {
     }
 }
 
-@media (max-width: 1024px) {
-    .block-left__text::before {
-        left: 320px;
-        top: 10px;
-        height: 50px;
-    }
+.block-left__text::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 28px;
+    width: 3px;
+    height: 60px;
+    background: #f1d44b;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .block-left__text::before {
-        left: 208px;
-        top: 10px;
+        height: 50px;
+        left: -18px;
+        top: 12px;
     }
 }
 

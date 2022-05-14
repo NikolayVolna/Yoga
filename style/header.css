@@ -13,7 +13,7 @@
     min-height: 68px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 900px) {
     .header__container {
         background: rgba(34, 42, 53, 0.2);
         min-height: 98px;
@@ -91,7 +91,7 @@
     color: #112734;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
     .btn-left {
         border: 1px solid #ffffff;
         color: #ffffff;
@@ -119,7 +119,7 @@
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
     .menu__nav {
         position: fixed;
         top: 0;
@@ -214,13 +214,13 @@
     transform: rotate(45deg) translate(0px, 50%);
 }
 
-@media (min-width: 770px) {
+@media (min-width: 900px) {
     .menu__burger {
         display: none;
     }
-    .menu__nav {
+    /* .menu__nav {
         background-color: transparent;
-    }
+    } */
 }
 
 
